@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Payment Test</title></head>
+<body>
+    <h1>Payment Gateway</h1>
+    <p>Testing Universal Link for Payment ID: <b id="payId"></b></p>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('payId').innerText = params.get('id') || 'No ID found';
+    </script>
+</body>
+</html>
